@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/aos.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>OdysseyTour</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_logo" data-aos="fade-down">
+        <a href="#">
+          <img src="./img/одиссея лого.png" alt="odyssey" class="logo"
+        /></a>
+      </div>
+      <div class="header_navbar" data-aos="fade-down">
+        <a href="#">главная</a>
+        <a href="#reasons">об агенстве</a>
+        <a href="#tours">туры</a>
+        <a href="#popup">зарегистрироваться</a>
+      </div>
+    </div>
+    <section class="welcome">
+      <div class="welcome_topside">
+        <div class="astronaut">
+          <img
+            src="./img/2023-04-21_15-53-06-removebg-preview.png"
+            alt=""
+            class="astronaut_helmet"
+            data-aos="fade-right"
+          />
+        </div>
+        <div class="welcome_text" data-aos="fade-left">
+          <h1>ОДИССЕЯ</h1>
+          <p>Воплощаем ваши мечты в реальность</p>
+          <p>Первое турагенство по космосу</p>
+        </div>
+      </div>
+      <div class="welcome_downside">
+        <div class="left_card" data-aos="fade-up">
+          <div class="top_left_card">
+            <div class="seelect">
+              <p>Откуда</p>
+              <select name="place" id="place" size="1" class="select1">
+                <option selected value="earth">Земля</option>
+                <option value="mars">Марс</option>
+                <option value="moon">Луна</option>
+                <option value="kazakhstan">Казахстан</option>
+              </select>
+            </div>
+            <div class="seelect">
+              <p>Куда</p>
+              <select name="place" id="place" size="1" class="select1">
+                <option selected value="earth">Млечный путь</option>
+                <option value="mars">Черная дыра</option>
+                <option value="moon">Сверхнова</option>
+                <option value="kazakhstan">Казахстан</option>
+              </select>
+            </div>
+          </div>
+          <div class="down_left_card">
+            <form>
+              <p>Когда: <input type="date" name="calendar" /></p>
+              <p>Обратно: <input type="date" name="calendar" /></p>
+            </form>
+            <input type="submit" value="Отправить" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hot_tours" id="tours">
+      <div class="hot_tours_carousel">
+        <h2 class="tours_title" data-aos="fade-up">ГОРЯЩИЕ ТУРЫ</h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-aos="fade-up"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carou_img1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carou_img2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carou_img3.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="reasons" id="reasons">
+      <h3 class="reasons_title" data-aos="fade-up">
+        ПРЕИМУЩЕСТВА НАШЕГО АГЕНСТВА
+      </h3>
+      <div class="reasons_cards">
+        <div class="firstcolumn">
+          <div class="reason_card" data-aos="fade-up">
+            <img src="./img/loss.png" alt="" />
+            <h4>Доступные цены</h4>
+            <p>
+              Наша ценавая политика позволяет практический каждому ощутить этот
+              опыт
+            </p>
+          </div>
+        </div>
+        <div class="secondcolumn">
+          <div class="reason_card" data-aos="fade-up">
+            <img src="./img/galaxy.png" alt="" />
+            <h3>Сможете увидеть все</h3>
+            <p>наша компания сможет доставить вас в любую известного света</p>
+          </div>
+          <div class="reason_card" data-aos="fade-up">
+            <img src="./img/rating.png" alt="" />
+            <h3>Незабываемый опыт</h3>
+            <p>Ощущения что невожможно описать словами</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="columnone">
+        <img src="./img/одиссея лого.png" alt="" class="footer_logo" />
+        <p>©2023 Copyright:All rights are reserved</p>
+        <div class="social_media">
+          <div>
+            <a href="#"
+              ><img
+                src="./img/free-icon-youtube-1384086.png"
+                alt=""
+                class="social_media_logo"
+            /></a>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="./img/free-icon-twitter-3128212.png"
+                alt=""
+                class="social_media_logo"
+            /></a>
+          </div>
+          <div>
+            <a href="#"
+              ><img
+                src="./img/free-icon-facebook-3128208.png"
+                alt=""
+                class="social_media_logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="columntwo">
+        <p class="link_title">Useless Links</p>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+      <div class="columntwo">
+        <p class="link_title">Useless Links</p>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+    </footer>
+    <div id="popup" class="popup">
+      <div class="popup_body">
+        <div class="popup_coctent">
+          <a href="#" class="popup_close"
+            ><img src="./img/close.png" alt=""
+          /></a>
+          <div class="popup_form">
+            <form action="#">
+              <p>Введите ваш email и пароль</p>
+              <div class="input_group">
+                <label for="username">Ваш email</label>
+                <input type="email" name="username" placeholder="Username" />
+              </div>
+              <div class="input_group">
+                <label for="password">Ваш пароль</label>
+                <input type="password" name="userpass" placeholder="Password" />
+              </div>
+              <div class="btn">
+                <input type="submit" placeholder="Отправить" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"
+  ></script>
+  <script src="aos.js"></script>
+  <script src="script.js"></script>
+</html>

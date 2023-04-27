@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+body {
+  width: 1308px;
+  height: 2000px;
+  margin: 0;
+  pad: 0;
+  position: relative;
+  top: -85px;
+}
+.header {
+  display: flex;
+  position: relative;
+  z-index: 3;
+  top: 85px;
+  width: 100%;
+  height: 85px;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin: 0;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+.header_navbar {
+  width: 749px;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+.header_navbar a {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #dedede;
+}
+.header_navbar a:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.6s;
+  text-shadow: 0 0 10px rgb(253, 253, 253);
+  transform: scale(1.09);
+}
+.header_fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.popup {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.popup_close {
+  margin-left: 370px;
+}
+.popup_close img {
+  width: 20px;
+}
+.popup_form {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup_form p {
+  font-family: "Jost", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 25%;
+  color: #dedede;
+}
+.input_group label {
+  font-family: "Jost", sans-serif;
+  color: #dedede;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.input_group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.input_group input {
+  border-radius: 10px;
+  padding: 0;
+  border: solid 1px #2f2f2f;
+}
+.input_group input::placeholder {
+  background-color: #2f2f2f;
+}
+.btn {
+  margin-left: 30%;
+}
+.btn input[type="submit"] {
+  padding: 20px;
+  background-color: #2f2f2f;
+  color: #dedede;
+}
+.welcome {
+  position: relative;
+  z-index: 0;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 46.59%,
+      #000000 94.51%
+    ),
+    url(../img/cosmos\ bg.jpg);
+  background-size: 1349px 1000px;
+  width: 1349px;
+  height: 935px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.welcome_topside {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+.welcome_text {
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 90px;
+  margin-top: 100px;
+}
+.welcome_text h1 {
+  font-size: 96px;
+  margin: 0;
+}
+.welcome_text p {
+  font-size: 20px;
+  align-items: center;
+  margin: 0;
+}
+.welcome_downside {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 140px;
+}
+.left_card {
+  padding-top: 50px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+}
+.top_left_card {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.down_left_card form {
+  display: flex;
+  align-items: center;
+}
+.down_left_card {
+  padding: 40px 40px;
+}
+.down_left_card input[type="submit"] {
+  margin-left: 37%;
+}
+.down_left_card p {
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+.down_left_card input[type="date"] {
+  padding: 15px;
+  border: 1px solid #2f2f2f;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  font-size: 14px;
+}
+.down_left_card input[type="submit"] {
+  width: 100px;
+  height: 30px;
+  color: #dedede;
+  background-color: #131313;
+  border: none;
+  border-radius: 7px;
+}
+.down_left_card input[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+.seelect select {
+  padding: 15px;
+  border: 1px solid #2f2f2f;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+  font-size: 14px;
+}
+.seelect p {
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+.astronaut {
+  margin: 0;
+  width: 570px;
+  height: 400px;
+  padding-top: 150px;
+}
+.astronaut_helmet {
+  width: 450px;
+}
+.hot_tours {
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 21.88%,
+      rgba(0, 0, 0, 0) 71.35%,
+      #000000 100%
+    ),
+    url(../img/2cosmicbgimg.jpg);
+  background-size: cover;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 3px;
+  width: 1349px;
+  height: 950px;
+  position: relative;
+  z-index: -2;
+}
+.hot_tours_carousel {
+  margin-top: 150px;
+}
+.tours_title,
+.reasons_title {
+  font-family: "Jost", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 40px;
+}
+.tours_carousel {
+  margin-top: 10000px;
+  position: relative;
+  display: flex;
+  z-index: -1;
+}
+.carousel-item img {
+  max-width: 700px;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 40px;
+}
+.layout1 {
+  z-index: 1;
+}
+.layout2 {
+  z-index: 1;
+  position: absolute;
+}
+.reasons {
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 21.88%,
+      rgba(0, 0, 0, 0) 71.35%,
+      #120f27 100%
+    ),
+    url(../img/3cosmicbg);
+  background-size: cover;
+  width: 1349px;
+  height: 935px;
+  position: relative;
+  top: -50px;
+}
+.reasons_cards {
+  display: flex;
+  height: 100%;
+  width: 1349px;
+  align-items: center;
+  padding-left: 10%;
+}
+.firstcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.secondcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.reason_card img {
+  width: 100px;
+}
+.reason_card {
+  width: 400px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  color: #dedede;
+  font-family: "Jost", sans-serif;
+  text-shadow: 0 0 50px rgb(255, 255, 255);
+}
+.reason_card:hover {
+  transform: scale(2);
+  transition: 0.6s;
+}
+footer {
+  background-color: #120f27;
+  width: 1349px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: -50px;
+}
+.columnone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.columnone p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #dedede;
+}
+.footer_logo {
+  width: 300px;
+}
+.social_media div {
+  background-color: #dedede;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.social_media {
+  display: flex;
+  justify-content: space-around;
+}
+.social_media_logo {
+  width: 40px;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+.columntwo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  text-align: center;
+}
+.columntwo p {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  color: #dedede;
+}
+.columntwo a {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #dedede;
+  margin-bottom: 10px;
+}
